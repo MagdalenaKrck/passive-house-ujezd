@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Passive House for Sale – Újezd u Tišnova</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header, section { padding: 2rem; }
+    header { background: #eef2f3; text-align: center; }
+    .lang-toggle { position: fixed; top: 1rem; right: 1rem; }
+    .content { max-width: 800px; margin: auto; }
+    .gallery img, iframe { width: 100%; margin: 1rem 0; border-radius: 8px; }
+    footer { text-align: center; padding: 2rem; font-size: 0.9em; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="lang-toggle">
+    <button onclick="setLang('en')">English</button> |
+    <button onclick="setLang('cz')">Čeština</button> |
+    <button onclick="setLang('de')">Deutsch</button>
+  </div>
+
+  <header>
+    <h1 data-en="Certified Passive House for Sale"
+        data-cz="Na prodej: Certifikovaný pasivní dům"
+        data-de="Zertifiziertes Passivhaus zu verkaufen">
+        Certified Passive House for Sale</h1>
+    <p data-en="Újezd u Tišnova, 20 mins from Brno – 2 hrs from Vienna"
+       data-cz="Újezd u Tišnova, 20 min od Brna – 2 hod od Vídně"
+       data-de="Újezd u Tišnova, 20 Min von Brünn – 2 Std von Wien">
+       Újezd u Tišnova, 20 mins from Brno – 2 hrs from Vienna
+    </p>
+  </header>
+
+  <section class="content">
+    <h2 data-en="Welcome home." data-cz="Vítejte doma." data-de="Willkommen zu Hause.">Welcome home.</h2>
+    <p data-en="This certified passive house offers peace, energy efficiency, and breathtaking views..."
+       data-cz="Tento certifikovaný pasivní dům nabízí klid, energetickou efektivitu a dechberoucí výhledy..."
+       data-de="Dieses zertifizierte Passivhaus bietet Ruhe, Energieeffizienz und atemberaubende Ausblicke...">
+       This certified passive house offers peace, energy efficiency, and breathtaking views...
+    </p>
+
+    <div class="gallery">
+      <img src="placeholder1.jpg" alt="Exterior">
+      <img src="placeholder2.jpg" alt="Interior">
+      <img src="placeholder3.jpg" alt="Garden">
+    </div>
+  </section>
+
+  <section class="content">
+    <h2 data-en="Video Tour" data-cz="Video prohlídka" data-de="Video-Rundgang">Video Tour</h2>
+    <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="content">
+    <h2 data-en="Location" data-cz="Lokalita" data-de="Lage">Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.458226383595!2d16.380!3d49.350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDIxJzAwLjAiTiAxNsKwMjInMDAuMCJF!5e0!3m2!1sen!2sus!4v0000000000000" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="content">
+    <h2 data-en="Contact" data-cz="Kontakt" data-de="Kontakt">Contact</h2>
+    <p data-en="Interested? Email us at example@email.com"
+       data-cz="Zájem? Napište nám na example@email.com"
+       data-de="Interesse? Schreiben Sie uns an example@email.com">
+       Interested? Email us at example@email.com
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Passive House in Újezd u Tišnova
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.dataset[lang];
+      });
+    }
+    setLang('en');
+  </script>
+</body>
+</html>
