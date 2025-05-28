@@ -1,84 +1,137 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Certified Passive House – Újezd u Tišnova</title>
-  <meta name="description" content="Passive house with garden, pool, photovoltaics, and panoramic views near Brno.">
-  <meta property="og:title" content="Certified Passive House – Újezd u Tišnova">
-  <meta property="og:description" content="Sustainable living with comfort. 2h from Vienna & Prague.">
-  <meta property="og:image" content="https://passive-house-web.netlify.app/placeholder1.jpg">
-  <meta property="og:url" content="https://passive-house-web.netlify.app">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; }
-    header, section { padding: 2rem; }
-    header { background: url('placeholder1.jpg') no-repeat center/cover; color: white; text-shadow: 0 1px 4px #000; text-align: center; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; }
-    .section { max-width: 900px; margin: auto; padding: 2rem; }
-    .gallery img { width: 100%; margin-bottom: 1rem; border-radius: 8px; }
-    iframe { width: 100%; height: 400px; border: 0; margin: 1rem 0; border-radius: 8px; }
-    footer { text-align: center; padding: 2rem; font-size: 0.8em; color: #666; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background-image: url('placeholder1.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0.5rem 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+    header p {
+      font-size: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+    nav {
+      background-color: #ffffffcc;
+      padding: 0.5rem 1rem;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(6px);
+      z-index: 999;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 400px;
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
   </style>
 </head>
 <body>
+  <nav>
+    <div><strong>Passive House</strong></div>
+    <div>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
+  <header>
+    <h1>Certified Passive House for Sale</h1>
+    <p>Modern architecture, energy independence and breathtaking nature in Újezd u Tišnova – 24.9 mil Kč (~999,000 €)</p>
+  </header>
 
-<header style="position: relative; background: none;">
-  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6)); z-index:1;"></div>
-  <div style="position: relative; z-index: 2; padding: 4rem 2rem; color: white; text-align: center; text-shadow: 0 2px 6px rgba(0,0,0,0.7);">
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="placeholder1.jpg" alt="House front" />
+      <img src="placeholder2.jpg" alt="Pool and terrace" />
+      <img src="placeholder3.jpg" alt="Garden" />
+    </div>
+  </section>
 
-  <h1>Certified Passive House for Sale</h1>
-  <h2>Nature, Design, Energy Freedom</h2>
-  <p>Újezd u Tišnova • 20 km from Brno • 2h from Vienna</p>
-  <h3>Price: CZK 24.9 million / €990,000</h3>
+  <section id="about">
+    <h2>About the House</h2>
+    <p>This architect-designed passive home (170 m²) offers 3 bedrooms, office, utility space, and open living areas with plenty of light. It features:</p>
+    <ul>
+      <li>Certified passive standard with ventilation & cooling system</li>
+      <li>Photovoltaics and partial energy self-sufficiency</li>
+      <li>Heated swimming pool with counter-current</li>
+      <li>Professionally designed ornamental and utility garden</li>
+      <li>Located at the edge of the forest, with horses behind the fence</li>
+    </ul>
+  </section>
 
-  </div>
-</header>
+  <section id="location">
+    <h2>Location</h2>
+    <p>Újezd u Tišnova – 20 km from Brno, Czech Republic. 2 hours from Vienna and Prague. Calm, green setting ideal for remote work and family life.</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2644.3652919706346!2d16.451453515916087!3d49.35931707934065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712e5db9b1ad0b1%3A0x1c924b30f7680833!2zxb5qZXpkIHUgVGnFoW5vdmU!5e0!3m2!1scs!2scz!4v1621441908302!5m2!1scs!2scz"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </section>
 
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Interested? Get in touch:</p>
+    <p>Email: <a href="mailto:magdalena.kreckova@gmail.com">magdalena.kreckova@gmail.com</a></p>
+    <p>We speak Czech & English. Viewings possible in person or online.</p>
+  </section>
 
-<section class="section">
-  <h2>Gallery</h2>
-  <img src="placeholder1.jpg" alt="House Exterior">
-  <img src="placeholder2.jpg" alt="Interior View">
-  <img src="placeholder3.jpg" alt="Garden and Pool">
-  <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" allowfullscreen></iframe>
-</section>
-
-<section class="section">
-  <h2>About the House</h2>
-  <p>This architect-designed passive house features:</p>
-  <ul>
-    <li>3+1 layout: 2 children's rooms, bedroom, study, pantry</li>
-    <li>Heated pool with counter-current, solar panels</li>
-    <li>Certified passive standard with cooling and heat recovery ventilation</li>
-    <li>Partially self-sufficient with FVE, low annual energy costs</li>
-    <li>Panoramic views, direct access to forest, horses nearby</li>
-  </ul>
-  <p>"Built with love, precision and long-term vision by the owners."</p>
-  <p>"An oasis for those who want to live in harmony with nature, with minimal energy impact."</p>
-</section>
-
-<section class="section">
-  <h2>Our Journey</h2>
-  <p>Behind the scenes – how our dream came to life:</p>
-  <ul>
-    <li>First tree planted 🌱</li>
-    <li>Pool construction 🛠️</li>
-    <li>Garden design with landscape architect 🌼</li>
-  </ul>
-  <!-- Optional: Add photos here -->
-</section>
-
-<section class="section">
-  <h2>Contact</h2>
-  <p>We speak Czech and English. Viewings possible in person or online.</p>
-  <p>Email: <a href="mailto:magdalena.kreckova@gmail.com">magdalena.kreckova@gmail.com</a></p>
-</section>
-
-<footer>
-  &copy; 2025 Passive House in Újezd u Tišnova
-</footer>
-
+  <footer>
+    &copy; 2025 Passive House Újezd. All rights reserved.
+  </footer>
 </body>
 </html>
