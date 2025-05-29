@@ -1,13 +1,176 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Passive House Újezd</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      animation: slideshow 30s infinite;
+      z-index: -1;
+    }
+    @keyframes slideshow {
+      0% { background-image: url('placeholder1.jpg'); }
+      33% { background-image: url('placeholder2.jpg'); }
+      66% { background-image: url('placeholder3.jpg'); }
+    }
+    nav {
+      background-color: #ffffffcc;
+      backdrop-filter: blur(6px);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .lang-switch {
+      margin-left: auto;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .price-box {
+      background: #fff3cd;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 3rem;
+      border: 1px solid #ffeeba;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Passive House Újezd</h1>
-  <p>This is the restored version of the website.</p>
+  <nav>
+    <div><strong>Passive House</strong></div>
+    <div>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#construction">Construction</a>
+      <a href="#pool">Pool</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="lang-switch">
+      <a href="#" onclick="setLang('en')">EN</a> |
+      <a href="#" onclick="setLang('cz')">CZ</a> |
+      <a href="#" onclick="setLang('de')">DE</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="background"></div>
+    <section style="color: white; text-align: center; padding-top: 20vh;">
+      <h1>Certified Passive House for Sale</h1>
+      <p>Modern design & nature, Újezd u Tišnova</p>
+    </section>
+  </header>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="placeholder1.jpg" alt="House front" onclick="openImage(this.src)" />
+      <img src="placeholder2.jpg" alt="Terrace" onclick="openImage(this.src)" />
+      <img src="placeholder3.jpg" alt="Garden" onclick="openImage(this.src)" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About the House</h2>
+    <p>Certified passive house, 170 m², solar panels, pool, stunning location. Designed for low energy consumption and natural harmony.</p>
+  </section>
+
+  <section id="construction">
+    <h2>Construction Process</h2>
+    <div class="gallery">
+      <img src="construction1.jpg" alt="Construction 1" onclick="openImage(this.src)" />
+      <img src="construction2.jpg" alt="Construction 2" onclick="openImage(this.src)" />
+    </div>
+  </section>
+
+  <section id="pool">
+    <h2>Pool Construction</h2>
+    <div class="gallery">
+      <img src="pool1.jpg" alt="Pool 1" onclick="openImage(this.src)" />
+      <img src="pool2.jpg" alt="Pool 2" onclick="openImage(this.src)" />
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>Location</h2>
+    <p>Újezd u Tišnova, 20 km from Brno, CZ</p>
+    <iframe src="https://www.google.com/maps?q=Újezd+u+Tišnova+52&output=embed" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+  </section>
+
+  <section class="price-box">
+    <h3>Price: 24.9 mil CZK (~999,000 €)</h3>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:magdalena.kreckova@gmail.com">magdalena.kreckova@gmail.com</a></p>
+    <p>We speak Czech & English. Viewings in person or online.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Passive House Újezd
+  </footer>
+
+  <script>
+    function openImage(src) {
+      const imgWindow = window.open('', '_blank');
+      imgWindow.document.write('<img src="' + src + '" style="width:100%">');
+    }
+    function setLang(lang) {
+      alert("Language switching not implemented yet. You selected: " + lang);
+    }
+  </script>
 </body>
 </html>
