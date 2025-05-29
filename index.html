@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,8 +94,7 @@
     <div>
       <a href="#gallery">Gallery</a>
       <a href="#about">About</a>
-      <a href="#construction">Construction</a>
-      <a href="#pool">Pool</a>
+      <a href="#story">Our Journey</a>
       <a href="#location">Location</a>
       <a href="#contact">Contact</a>
     </div>
@@ -108,8 +108,8 @@
   <header>
     <div class="background"></div>
     <section style="color: white; text-align: center; padding-top: 20vh;">
-      <h1>Certified Passive House for Sale</h1>
-      <p>Modern design & nature, Újezd u Tišnova</p>
+      <h1 style="font-size: 2.8rem;">Certified Passive House – Sustainability, Comfort & Design</h1>
+      <p>Modern living in harmony with nature – Újezd u Tišnova</p>
     </section>
   </header>
 
@@ -127,26 +127,30 @@
     <p>Certified passive house, 170 m², solar panels, pool, stunning location. Designed for low energy consumption and natural harmony.</p>
   </section>
 
-  <section id="construction">
-    <h2>Construction Process</h2>
+  <section id="story">
+    <h2>Our Journey</h2>
+    <h3>Construction Process</h3>
     <div class="gallery">
-      <img src="construction1.jpg" alt="Construction 1" onclick="openImage(this.src)" />
-      <img src="construction2.jpg" alt="Construction 2" onclick="openImage(this.src)" />
+      <script>
+        for (let i = 1; i <= 25; i++) {
+          document.write(`<img src="construction${i}.jpg" alt="Construction ${i}" onclick="openImage('construction${i}.jpg')" />`);
+        }
+      </script>
     </div>
-  </section>
-
-  <section id="pool">
-    <h2>Pool Construction</h2>
+    <h3>Pool Construction</h3>
     <div class="gallery">
-      <img src="pool1.jpg" alt="Pool 1" onclick="openImage(this.src)" />
-      <img src="pool2.jpg" alt="Pool 2" onclick="openImage(this.src)" />
+      <script>
+        for (let i = 1; i <= 5; i++) {
+          document.write(`<img src="pool${i}.jpg" alt="Pool ${i}" onclick="openImage('pool${i}.jpg')" />`);
+        }
+      </script>
     </div>
   </section>
 
   <section id="location">
     <h2>Location</h2>
     <p>Újezd u Tišnova, 20 km from Brno, CZ</p>
-    <iframe src="https://www.google.com/maps?q=Újezd+u+Tišnova+52&output=embed" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps?q=49.362167,16.445234&output=embed" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
   </section>
 
   <section class="price-box">
