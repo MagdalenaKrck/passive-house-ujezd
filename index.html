@@ -78,6 +78,9 @@
       padding: 1rem;
       margin-top: 3rem;
     }
+    iframe {
+      border: none;
+    }
   </style>
 </head>
 <body>
@@ -87,7 +90,7 @@
       <a href="#gallery">Gallery</a>
       <a href="#about">About</a>
       <a href="#certification">Certification</a>
-      <a href="#journey">The Journey of the House</a>
+      <a href="journey.html">The Journey of the House</a>
       <a href="#location">Location</a>
       <a href="#contact">Contact</a>
     </div>
@@ -102,7 +105,7 @@
     <div class="background"></div>
     <section style="color: white; text-align: center; padding-top: 20vh;">
       <h1 style="font-size: 2.8rem;">Certified Passive House – Sustainability, Comfort & Design</h1>
-      <p style="font-size: 1.5rem;">Újezd u Tišnova</p>
+      <p style="font-size: 1.8rem;">Újezd u Tišnova</p>
     </section>
   </header>
 
@@ -125,30 +128,10 @@
     <p>The house is a certified passive house with minimal energy consumption, efficient heating and cooling, and smart ventilation with heat recovery.</p>
   </section>
 
-  <section id="journey">
-    <h2>The Journey of the House</h2>
-    <h3>Construction Process</h3>
-    <div class="gallery">
-      <script>
-        for (let i = 1; i <= 25; i++) {
-          document.write(`<img src="construction${i}.jpg" alt="Construction ${i}" onclick="openImage('construction${i}.jpg')" />`);
-        }
-      </script>
-    </div>
-    <h3>Pool Construction</h3>
-    <div class="gallery">
-      <script>
-        for (let i = 1; i <= 5; i++) {
-          document.write(`<img src="pool${i}.jpg" alt="Pool ${i}" onclick="openImage('pool${i}.jpg')" />`);
-        }
-      </script>
-    </div>
-  </section>
-
   <section id="location">
     <h2>Location</h2>
     <p>Újezd u Tišnova, 20 km from Brno, CZ</p>
-    <iframe src="https://www.google.com/maps?q=49.3612119,16.3302675&output=embed" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps?q=49.3612119,16.3302675&output=embed" width="100%" height="300"></iframe>
   </section>
 
   <section id="contact">
